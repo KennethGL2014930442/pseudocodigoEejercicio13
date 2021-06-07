@@ -1,0 +1,30 @@
+Algoritmo Ejercicio13
+	Repetir
+		Borrar Pantalla
+		Escribir '1- Sumar'
+		Escribir '2- Dividir'
+		Escribir '3- Salir'
+		Escribir 'Ingrese la opcion que desee: '
+		Leer opcion
+	Hasta Que (opcion>0 Y opcion<4)
+	Segun opcion  Hacer
+		1:
+			Escribir 'Ingrese el numero 1: '
+			Leer num1
+			Escribir 'Ingrese el numero 2: '
+			Leer num2
+			suma <- num1+num2
+			Escribir 'El resultado de la suma es: ',suma
+		2:
+			Escribir 'Ingrese el numero 1: '
+			Leer num1
+			Escribir 'Ingrese el numero 2: '
+			Leer num2
+			Si (num2<>0) Entonces
+				division <- num1/num2
+				Escribir 'El resultado de la suma es: ',division
+			SiNo
+				Escribir 'No se puede dividir entre 0'
+			FinSi
+	FinSegun
+FinAlgoritmo
